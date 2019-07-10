@@ -1,0 +1,131 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background-color: lightgray;
+}
+
+.btntest, .proj2 {
+    filter: grayscale(100%);
+    color: black;
+    position: absolute;
+    padding: 10px;
+    top: 50vh;
+    left: 45vw;
+    box-shadow: 0px 0px 0px 0px #FC5185;
+    transition: box-shadow 0.6s linear;
+    margin: 0.5em;
+    border-radius: 5px;
+}
+
+.btntest:hover, .proj2:hover {
+    box-shadow: 0px 0px 0px 10px #FC5185;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-color: lightgrey;
+    transition: transform .6s ease-in;
+    overflow: hidden;
+    margin: 0;
+}
+
+.portfolio {
+    font-size: 17.9vw;
+    position: absolute;
+    top: 192px;
+}
+
+.slide {
+    position: absolute;
+    bottom: -100vh;
+    width: 100vw;
+    height: 100vh;
+    background-color: goldenrod;
+    transform: rotate(180deg);
+    transition: bottom .6s ease-in;
+}
+
+.go {
+    bottom: 0;
+    transition: bottom .6s ease-in;
+}
+
+.bounce{
+    animation: boing .3s linear 2 alternate;
+}
+
+@keyframes boing {
+    from {
+        bottom: 0vh;
+    }
+    to {
+        bottom: -4vh;
+    }
+}
+
+.return {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.return {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+}
+
+.btnFall {
+    animation: fall 1.5s ease-in-out;
+}
+
+@keyframes fall {
+    0% {
+        transform: rotate(0deg);
+        bottom: 20px;
+        left: 20px;
+    }
+    25% {
+        transform: rotate(180deg);
+        bottom: 5vh;
+        left: 20px;
+    }
+    50% {
+        transform: rotate(-180deg);
+        bottom: 10vh;
+        left: 20px;
+    }
+    100% {
+        transform: rotate(0deg);
+        bottom: 20px;
+        left: 20px;
+    }
+}
+
+.stageLeft {
+    position: absolute;
+    left: -100vw;
+    width: 100vw;
+    height: 100vh;
+    background-color: goldenrod;
+    transition: left .6s ease-in;
+}
+
+.go2 {
+    left: 0;
+    transition: left .6s ease-in;
+}
+
+.bounce2{
+    animation: boing2 .3s linear 2 alternate;
+}
+
+@keyframes boing2 {
+    from {
+        left: 0vw;
+    }
+    to {
+        left: -4vw;
+    }
+}
